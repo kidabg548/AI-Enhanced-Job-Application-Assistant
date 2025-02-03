@@ -47,25 +47,6 @@ This application utilizes several advanced prompting techniques to achieve its f
 *   **Iterative Prompting (Feedback Loop):**
     *   **Purpose:** To refine the AI's output based on the user's feedback.
     *   **Implementation:** Users are able to submit feedback, which is then used to create a new prompt for the AI to generate an improved cover letter.
-    *    **Example:**
-         ```javascript
-            `You are an expert career coach, specialized in crafting compelling cover letters. Analyze the following cover letter: ${coverLetter}. 
-              A user rated this cover letter with the following feedback: ${feedback}.
-
-              Based on the job description: ${jobDescription} and the resume information: ${resumeInfo}, generate an improved version of the cover letter that integrates the user's feedback. 
-
-              Ensure the cover letter includes the following structure:
-                    1.  A brief and compelling introduction that grabs the reader's attention.
-                   2.  A paragraph highlighting 2-3 most relevant skills and experiences for this specific job using examples from the resume.
-                   3.  A closing paragraph restating the interest in the position and a call to action to the reader.
-
-              Keep the letter concise and professional, and use a ${userPreferences.tone} tone, be sure to use active voice. Emphasize and integrate these keywords and phrases: ${userPreferences.keywords}. Be sure to highlight the following accomplishments: ${userPreferences.accomplishments}.
-
-                Avoid generic phrases like 'hard-working', 'team player' or 'motivated'. Instead, use specific examples based on the resume.
-                
-               Format the output as a well-formatted letter with proper paragraphs and spacing.
-           `
-        ```
   * **Specific Instructions:**
      *  **Purpose:** To provide a more specific guidance on how the AI should complete the task.
      *   **Implementation:** The prompts include specific instructions on formatting, structure, tone and voice.
