@@ -44,9 +44,6 @@ This application utilizes several advanced prompting techniques to achieve its f
      *  **Purpose:** To ensure the cover letter is unique and does not use generic or overused language.
      *   **Implementation:** The prompt will explicitly tell the AI to avoid common and overused phrases, and provide a specific example of phrases to avoid, it also reinforces using specific examples from the resume to achieve a more unique result.
      *   **Example:** The prompts includes the explicit instruction: `Avoid generic phrases like 'hard-working', 'team player' or 'motivated'. Instead, use specific examples based on the resume.`
-*   **Iterative Prompting (Feedback Loop):**
-    *   **Purpose:** To refine the AI's output based on the user's feedback.
-    *   **Implementation:** Users are able to submit feedback, which is then used to create a new prompt for the AI to generate an improved cover letter.
   * **Specific Instructions:**
      *  **Purpose:** To provide a more specific guidance on how the AI should complete the task.
      *   **Implementation:** The prompts include specific instructions on formatting, structure, tone and voice.
