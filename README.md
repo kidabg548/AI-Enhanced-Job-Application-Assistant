@@ -57,14 +57,7 @@ This application utilizes several advanced prompting techniques to achieve its f
 The application utilizes the following parameters from the Gemini API:
 
 *   **`model: "gemini-pro"`:** This parameter uses the `gemini-pro` model which is optimal for text-generation.
-*   **Temperature:**  This parameter is not explicitly adjusted as we decided that for this application it is best to use a lower temperature for more consistency. This setting is not adjustable by the user.
-*  **Max Tokens:** This parameter is not explicitly adjusted as the text that is generated is not supposed to be very long. We rely on the `concise` instruction to generate appropriate responses.
-*   **Top-P (Nucleus Sampling):** This parameter was not adjusted for this application. We decided that the model does not need more diversity in the responses as that may create inconsistencies. This setting is not adjustable by the user.
+*   **Temperature:**  The temperature parameter is set to 0.7. This provides a balance between creativity and consistency. It allows for some variation in the output but encourages coherence, leading to more suitable cover letter text. This setting is adjustable in the code by the developer to fine-tune the balance of creativity and accuracy.
+*  **Max Tokens:** The maxOutputTokens parameter is set to 800. This limits the generated output length, ensuring cover letters remain concise and focused on the most relevant information. It also prevents excessively long outputs. The parameter is adjustable in code to fine-tune response length.
+*   **Top-P (Nucleus Sampling):**  The topP parameter is set to 0.9. This encourages the model to choose the most likely tokens, promoting coherent and relevant responses but allowing some diversity in its output. This setting is adjustable in the code by the developer to find a suitable diversity for responses.
 
-## Future Improvements
-
-*   **Include Resume Generator:** The project can be improved by incorporating a resume generator to provide an end-to-end solution for job applications.
-*   **More Parameter Customizations:** Giving users control over more parameters such as the temperature.
-*   **More Specific Persona Instructions:** Providing more specific instructions regarding the persona of the AI agent could lead to further improvement in output.
-*   **More Structured Feedback System:** Create a feedback system that allows users to select the part of the text that they would like to improve, so that the next prompt is even more specific.
-*   **User Accounts:** To make this a more complete application, user accounts could be created so the user preferences persist over time.
